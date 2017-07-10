@@ -1,0 +1,52 @@
+body {
+   padding-top: 70px;
+    }
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+#nav
+{
+    /* container */
+}
+    #nav > a
+    {
+        display: none;
+    }
+    #nav li
+    {
+        position: relative;
+    }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: 3.75em;
+    }
+        #nav > ul > li
+        {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+        #nav li:hover ul
+        {
+            display: block;
+        }

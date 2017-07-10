@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+	<title>TH Brandenburg Stundenpläne</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link href="css/menu.css" rel="stylesheet">	
+	<link href="css/footer.css" rel="stylesheet">
+</head>
+
+<!-- Scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/stundenplan.js" charset="UTF-8"></script>
+  
+<body>
+	<style>
+		body {
+			padding-top: 50px;
+			}
+		
+        .navbar-template {
+            padding: 40px 15px;
+			}
+		
+		.img-opacity {
+			opacity: 0.2;
+			filter: alpha(opacity=50);
+			}
+			
+		.img-center {
+			margin:0 auto;
+			}
+
+    </style>
+		
+		<!-- Header/Navigation -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="indexSem2016-2017.html">TH Brandenburg Stundenpläne</a>
+                </div>
+                <div id = "nav-main" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+					
+					<!-- Informatik und Medien -->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Informatik und Medien<b class="caret"></b></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Applied Computer Science (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='i_bacs_1'>1. Semester</a></li>
+										<li><a href="#" id='i_bacs_3'>3. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Digitale Medien (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='i_mdm_1'>1. Semester</a></li>
+										<li><a href="#" id='i_mdm_3'>3. Semester</a></li>
+									</ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Informatik (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='i_binf_1'>1. Semester</a></li>
+										<li><a href="#" id='i_binf_3'>3. Semester</a></li>
+										<li><a href="#" id='i_binf_5'>5. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Informatik (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='i_minf_1'>1. Semester</a></li>
+										<li><a href="#" id='i_minf_2'>2. Semester</a></li>
+										<li><a href="#" id='i_minf_3'>3. Semester</a></li>
+                                    </ul>
+								</li>
+								
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Medizininformatik (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='i_bmzi_1'>1. Semester</a></li>
+										<li><a href="#" id='i_bmzi_3'>3. Semester</a></li>
+										<li><a href="#" id='i_bmzi_5'>5. Semester</a></li>
+                                    </ul>
+								</li>								
+
+                            </ul>
+                        </li>
+						
+						<!-- Wirtschaft -->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Wirtschaft<b class="caret"></b></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Betriebswirtschaftslehre (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_bbwl_1'>1. Semester</a></li>
+										<li><a href="#" id='w_bbwl_3'>3. Semester</a></li>
+										<li><a href="#" id='w_bbwl_5'>5. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Betriebswirtschaftslehre (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_mbwl_1'>1. Semester</a></li>
+										<li><a href="#" id='w_mbwl_3'>3. Semester</a></li>
+									</ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Wirtschaftsinformatik (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_bwi_1'>1. Semester</a></li>
+										<li><a href="#" id='w_bwi_3'>3. Semester</a></li>
+										<li><a href="#" id='w_bwi_5'>5. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Wirtschaftsinformatik (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_mwi_1'>1. Semester</a></li>
+										<li><a href="#" id='w_mwi_3'>3. Semester</a></li>
+                                    </ul>
+								</li>
+								
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Security Management (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_msec_1'>1. Semester</a></li>
+										<li><a href="#" id='w_msec_3'>3. Semester</a></li>
+                                    </ul>
+								</li>	
+
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Technologie- und Innovationsmanagement (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='w_mtim_2'>2. Semester</a></li>
+                                    </ul>
+								</li>									
+
+                            </ul>
+                        </li>
+						
+						<!-- Technik -->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Technik<b class="caret"></b></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Augenoptik/Optische Gerätetechnik (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_baog_1'>1. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Computer Aided Robust Engineering (Master), künftig Maschinenbau<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_mcare_1'>1. Semester</a></li>
+										<li><a href="#" id='t_mcare_2'>2. Semester</a></li>
+									</ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Energieeffizienz Technischer Systeme (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_menef_1'>1. Semester</a></li>
+										<li><a href="#" id='t_menef_2'>2. Semester</a></li>
+                                    </ul>
+								</li>
+								
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Elektronik (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bel_5'>5. Semester</a></li>
+										<li><a href="#" id='t_bel_7'>7. Semester</a></li>
+                                    </ul>
+								</li>
+								
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingenieurwissenschaften (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bingwis_1'>1. Semester</a></li>
+										<li><a href="#" id='t_bingwis_3'>3. Semester</a></li>
+                                    </ul>
+								</li>	
+
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Maschinenbau (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bmb_1'>1. Semester</a></li>
+										<li><a href="#" id='t_bmb_3'>3. Semester</a></li>
+										<li><a href="#" id='t_bmb_5'>5. Semester</a></li>
+										<li><a href="#" id='t_bmb_7'>7. Semester</a></li>
+                                    </ul>
+								</li>
+								
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mechatronik/Siemens-Akademie (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bmtsa_3'>3. Semester</a></li>
+										<li><a href="#" id='t_bmtsa_5'>5. Semester</a></li>
+										<li><a href="#" id='t_bmtsa_7'>7. Semester</a></li>
+                                    </ul>
+								</li>
+
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mechatronik/Automatisierungssysteme (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bmt_5'>5. Semester</a></li>
+										<li><a href="#" id='t_bmt_7'>7. Semester</a></li>
+                                    </ul>
+								</li>
+								
+								
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mikrosystemtechnik und Optische Technologien (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bmiopt_5'>5. Semester</a></li>
+										<li><a href="#" id='t_bmiopt_7'>7. Semester</a></li>
+                                    </ul>
+								</li>
+
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Photonics (Master)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_mph_1'>1. Semester</a></li>
+										<li><a href="#" id='t_mph_3'>3. Semester</a></li>
+                                    </ul>
+								</li>
+
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Wirtschaftsingenieurwesen (Bachelor)<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" id='t_bwing_1'>1. Semester</a></li>
+										<li><a href="#" id='t_bwing_3'>3. Semester</a></li>
+                                    </ul>
+								</li>								
+
+                            </ul>
+                        </li>						
+                    </ul>
+                </div>
+            </div>
+        </div>
+	<div id = "content">
+		<img src="images/2015_10_05_THB_Logo_RGB_S.jpg" class="img-responsive img-center img-opacity"  width="993" height="415"> 
+	</div> 
+	
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted"><a href="indexSem2017.html">Sommersemester 2017</a> <span class=" glyphicon glyphicon-minus"></span> <a href="indexSem2016-2017">Wintersemester 2016/2017</a> <span class=" glyphicon glyphicon-minus"></span> <a href="https://www.th-brandenburg.de/startseite/">Technische Hochschule Brandenburg</a></p>
+		</div>
+    </footer>
+	
+	<!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Navigation JavaScript -->
+	<script src="js/navigationbar.js"></script>
+
+</body>
+</html>
